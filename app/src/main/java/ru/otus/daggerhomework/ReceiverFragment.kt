@@ -23,9 +23,9 @@ class ReceiverFragment : Fragment() {
     ): View? {
         receiverFragmentComponent = DaggerReceiverFragmentComponent.factory()
             .build(
-                appComponent = (requireActivity() as MainMainActivity).application.component,
+                appComponent = (requireActivity() as MainActivity).application.component,
                 mainActivityComponent = (requireActivity() as MainActivityComponentProvider).provideMainActivityComponent(),
-                contextActivity = (requireActivity() as MainMainActivity).application,
+                contextActivity = (requireActivity() as MainActivity).application,
                 fragment = this,
             )
         receiverViewModel = receiverFragmentComponent.producerVM()

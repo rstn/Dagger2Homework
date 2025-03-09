@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import ru.otus.daggerhomework.di.DaggerMainActivityComponent
 import ru.otus.daggerhomework.di.MainActivityComponent
 
-class MainMainActivity : FragmentActivity(), MainActivityComponentProvider {
+class MainActivity : FragmentActivity(), MainActivityComponentProvider {
     private lateinit var component: MainActivityComponent
 
     override fun onCreate(savedInstanceState: Bundle?) {

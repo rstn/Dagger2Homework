@@ -23,7 +23,7 @@ class ProducerFragment : Fragment() {
         producerFragmentComponent = DaggerProducerFragmentComponent.factory()
             .build(
                 contextActivity = requireActivity(),
-                appComponent = (requireActivity() as MainMainActivity).application.component,
+                appComponent = (requireActivity() as MainActivity).application.component,
                 mainActivityComponent = (requireActivity() as MainActivityComponentProvider).provideMainActivityComponent()
             )
         viewModel = producerFragmentComponent.producerVM()
